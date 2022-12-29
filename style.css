@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color: #0F0D1E;
+    color: aliceblue;
+    font: 600 normal 1rem 'Poppins';
+}
