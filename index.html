@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unslashed Finance</title>
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
@@ -15,7 +16,65 @@
 </head>
 
 <body>
+    <h1 id="rotate-device">Please Rotate your device !<br><img src="./assets/images/rotate-device.png" width="128px" height="128px"> </h1>
+    <div id="main">
+        <div class="topnav" id="myTopnav">
+            <img src="./assets/images/Logo.svg" alt="logo">
+            <div id="mainlinks" class="sideNav">
+                <span style="font-size: 38px;" class="closebtn" onClick="closeNav()"><i class="fa fa-close"></i></span>
+                <a href="#news">Docs</a>
+                <a href="#contact">Community</a>
+                <a href="#contact">Governance</a>
+            </div>
+            <a style="background: #766dc5;color:#000;border-radius: 10px;color: aliceblue;" id="btn">Use App</a>
+            <a href="#" class="icon" onclick="OpenNav()">
+                <i class="fa fa-bars" style="font-size: 24px;"></i>
+            </a>
+        </div>
 
+        <div id="title_container">
+            <div id="item1">
+                <p style="color:#33323f;">WELCOME TO UNSLASHED</p>
+            </div>
+            <div id="item2">
+                <p>Insurance for Decentralized Finance</p>
+            </div>
+            <div id="item3">
+                <p style="color:#8a889e;font-size:1.0625rem;">Trusted by institutions and DeFi power users to keep their
+                    assets secure.</p>
+            </div>
+            <div id="item4">
+                <a style="background: #5041d5;border:none;padding:13px 32px;border-radius:10px;margin-right: 15px;">Get
+                    Insured</a>
+                <a
+                    style="background: transparent;padding:13px 32px;border-radius:10px; border: 2px solid #5041d5;margin-left: 15px;">Earn
+                    Yeild</a>
+            </div>
+        </div>
+
+        <div id="stat">
+            <div class="stat_childs">
+                <div id="stat_child1_int" class="stat_child_int">24%</div>
+                <div  class="stat_child_text">Avg. Yield</div>
+            </div>
+            <div class="stat_childs LR-bd">
+                <div id="stat_child2_int" class="stat_child_int">$500M+</div>
+                <div  class="stat_child_text">Insured Assets</div>
+            </div>
+            <div class="stat_childs">
+                <div id="stat_child3_int" class="stat_child_int">3,210+</div>
+                <div  class="stat_child_text">Capital Providers</div>
+            </div>
+
+        </div>
+        <div id="grid">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+        </div>
+        <!-- <input type="color" name=""> -->
+    </div>
+    <script src="main.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
