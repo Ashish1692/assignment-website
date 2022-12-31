@@ -242,7 +242,7 @@ body {
 .item3 {
     grid-column: 1/3;
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
     column-gap: 3em;
 }
 
@@ -258,8 +258,9 @@ body {
     column-gap: 3em;
     flex-wrap: wrap;
 }
-.item_box > span > img{
-    background: linear-gradient(#2d2846,#171521);
+
+.item_box>span>img {
+    background: linear-gradient(#2d2846, #171521);
     border-radius: 18px;
     padding: 18px;
     margin: 12px 0 12px 12px;
@@ -274,7 +275,7 @@ body {
 
     .item3 {
         grid-column: 1;
-        grid-template-columns: repeat(1,auto);
+        grid-template-columns: repeat(1, auto);
     }
 
     .item1>h1 {
@@ -282,18 +283,21 @@ body {
         font-weight: 900;
     }
 }
-#signal_strength{
-    margin: 0 20% 8% 20%;
+
+#signal_strength {
+    margin: 0 10% 8% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 4em;
     align-items: center;
 }
-#signal_content{
+
+#signal_content {
     text-align: center;
 }
-#signal_container{
+
+#signal_container {
     background-color: #1C1B2C;
     width: 100%;
     padding: 3em;
@@ -301,10 +305,11 @@ body {
     border: 1px solid #413b5e;
     box-shadow: inset 2px 2px 79px #131021;
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3, auto);
     column-gap: 2em;
 }
-.signal_item{
+
+.signal_item {
     /* background: linear-gradient(#2d2846,#171521); */
     background-color: #19162c;
     border: 1px solid #504972;
@@ -313,11 +318,13 @@ body {
     margin: 12px 0 12px 12px;
 
 }
-.signal_item:hover{
+
+.signal_item:hover {
     border: 1px solid #08efe0;
     cursor: pointer;
 }
-.signal_item > span > img{
+
+.signal_item>span>img {
     width: 58px;
     height: 58px;
     background-color: white;
@@ -325,19 +332,139 @@ body {
     border-radius: 12px;
     margin-right: 12px;
 }
-.read-more{
+
+.read-more {
     color: white;
     text-decoration: none;
 }
-.read-more:hover{
+
+.read-more:hover {
     text-decoration: underline;
     margin-right: 12px;
 }
 
-@media  screen and (max-width:1000px) {
-    #signal_container{
+@media screen and (max-width:1000px) {
+    #signal_container {
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(1, auto);
     }
-    
+
+}
+
+#active_invol {
+    margin: 0 10% 8% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4em;
+}
+
+#active_invol_content {
+    text-align: center;
+
+}
+
+#active_invol_container {
+    display: grid;
+    grid-template: auto / auto auto;
+    gap: 1em;
+}
+
+#active_item1 {
+    border: 1px solid rgb(110, 93, 93);
+    grid-row: 1/3;
+    background: linear-gradient(245deg, #6BDCDC, #B1A3F0);
+    border-radius: 25px;
+    border: none;
+    padding: 1.3em;
+    box-shadow: inset -2px -2px 8px #B1A3F0, inset 0px 2px 12px #B1A3F0;
+}
+
+#active_item1:hover {
+    box-shadow: 1px 1px 38px #b1a3f051;
+}
+
+#active_item1>img {
+    position: relative;
+    bottom: 65px;
+}
+
+#active_item1>p {
+    position: relative;
+    left: 0;
+    color: #191531;
+}
+
+
+.active_item2P {
+    background-color: #19162c;
+    border: 1px solid #504972;
+    border-radius: 25px;
+    padding: 18px;
+    margin: 12px 0 12px 12px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    box-shadow: inset 2px 2px 79px #111018;
+}
+
+.active_item2P>* {
+    position: relative;
+    top: 40%;
+}
+.active_item2P:hover {
+    border: 1px solid #5fdbd2;
+    cursor: pointer;
+}
+@media screen and (max-width:1200px){
+    #active_invol_container {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+    #active_item1>img {
+        position: relative;
+        bottom: 65px;
+        left: 20%;
+    }
+    .active_item2P{
+        height: 180px;
+    }
+}
+
+#news_letter{
+    background-color: #161525;
+    width: 75%;
+    padding: 4em;
+    border-radius: 24px;
+    border: 1px solid #413b5e;
+    box-shadow: inset 2px 2px 79px #131021;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+}
+#news_letter>*{
+    line-height: 1.5;
+}
+#news_letter #email{
+    background-color: #1D1B2C;
+    padding: 16px 16px;
+    border: 1px solid #433974;
+    border-radius: 12px;
+    outline: none;
+    color: white;
+    width: 75%;
+}
+#email::placeholder{
+    color: #7d7a8d;
+}
+#news_letter>span{
+    background-color: #6350DB;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:1200px){
+   #news_letter{ width: 100%;text-align: center;padding: 2em;}
 }
