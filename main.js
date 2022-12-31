@@ -8,7 +8,7 @@ function myFunction() {
 }
 
 function OpenNav() {
-    document.querySelector(".sideNav").style.width = "105%";
+    document.querySelector(".sideNav").style.width = "110%";
 }
 function closeNav() {
     document.querySelector(".sideNav").style.width = "0";
