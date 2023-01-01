@@ -349,6 +349,11 @@ body {
         grid-template-columns: repeat(1, auto);
     }
 
+    .signal_item>span>img {
+        width: 35px;
+        height: 35px;
+    }
+
 }
 
 #active_invol {
@@ -481,21 +486,24 @@ body {
         padding: 2em;
     }
 }
-footer{
+
+footer {
     margin: 3% 10% 2% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-#social_icons>span>img{
+
+#social_icons>span>img {
     margin: 0 2em 2em 2em;
     padding: 16px 16px;
     background-color: #2d2846;
     border-radius: 10px;
     cursor: pointer;
 }
-#footer_content>*{
+
+#footer_content>* {
     margin-top: 1em;
     padding: 10px 0 10px 0;
     color: #474351;
