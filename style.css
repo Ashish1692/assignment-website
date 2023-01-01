@@ -350,8 +350,8 @@ body {
     }
 
     .signal_item>span>img {
-        width: 35px;
-        height: 35px;
+        width: 32px;
+        height: 32px;
     }
 
 }
@@ -405,7 +405,7 @@ body {
     background-color: #19162c;
     border: 1px solid #504972;
     border-radius: 25px;
-    padding: 16px;
+    padding: 20px;
     margin: 12px 0 12px 12px;
     display: flex;
     flex-direction: column;
@@ -437,7 +437,7 @@ body {
 
     .active_item2P {
         height: 180px;
-        padding: 0 12px;
+        padding: 16px;
     }
 }
 
